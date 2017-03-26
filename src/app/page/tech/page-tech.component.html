@@ -1,0 +1,13 @@
+<div class="page">
+  <section>
+    <div class="page-head">
+      <h1>{{title}}</h1>
+      <label>{{description}}</label>
+    </div>
+    <div>
+      <li *ngFor="let tech of tech_list">
+        <item-card [itemInfo]="tech"></item-card>
+      </li>
+    </div>
+  </section>
+</div>

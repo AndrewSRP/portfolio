@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<page-header></page-header>
+<page-intro id="intro" (contact)="changeSubForm($event)"></page-intro>
+<page-tech id="tech"></page-tech>
+<page-project id="project"></page-project>
+<page-connect id="connect" (contact)="changeSubForm($event)"></page-connect>
+<page-footer></page-footer>
+<page-subform [state]="subformDisplay" (contact)="changeSubForm($event)"></page-subform>

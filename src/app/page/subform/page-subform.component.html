@@ -1,0 +1,26 @@
+<div class="sub-form" [@heroState]="state">
+    <div class="sub-form-close">
+        <a class="cd-modal-close" (click)="onClose()">
+          <i class="fa fa-times-circle " aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="sub-form-body">
+        <div class="sub-form-header">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="sub-form-input">
+            <li *ngFor="let input of inputList;let index = index"
+                class="{{index % 2 === 0 ? 'sub-form-left':'sub-form-right'}}">
+                <label>{{input.title}}</label>
+                <input [(ngModel)]="hrManagerInfo[input.target]" type="text" placeholder="{{input.placeholder}}" />
+            </li>
+        </div>
+        <div class="sub-form-textarea">
+            <label>{{textArea.title}}</label>
+            <textarea placeholder="{{textArea.placeholder}}" [(ngModel)]="hrManagerInfo[textArea.target]"></textarea>
+        </div>
+        <div class="sub-form-submit" (click)="sendSheet()">
+            <a class="open-contact" >{{open_contact}}</a>
+        </div>
+    </div>
+</div>

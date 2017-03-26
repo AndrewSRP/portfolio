@@ -1,0 +1,145 @@
+.sub-form {
+  background-color: #2A3A3F;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+
+  z-index: 100;
+}
+
+input, textarea{
+    width: calc(100% - 20px);
+    font-size: 1.3rem;
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+
+    border-radius: 5px;
+}
+
+li > label, .sub-form-textarea > label{
+    display: block;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+}
+
+.sub-form-header{
+    text-align: center;
+    padding: 20px 0;
+    color: rgba(255,255,255,0.7);
+}
+
+.open-contact{
+    display: inline-block;
+    margin: 20px;
+
+    padding: 1.1rem 2rem;
+    font-size: 1.3rem;
+    border: 2px solid #FDCD3B;
+    border-radius: 2rem;
+
+    color: #f7f7f7;
+}
+
+.open-contact:hover{
+    animation-name: tutsFade;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.sub-form-submit{
+    text-align: center;
+}
+
+.sub-form-close{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+.sub-form-close > a{
+  font-size: 2.4rem;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.sub-form-input > li{
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+}
+
+@keyframes tutsFade {
+  from {
+    padding: 1.1rem 2.2rem;
+  }
+  to {
+    padding: 1.1rem 2rem;
+    color: #2A3A3F;
+    background-color: #FDCD3B;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .sub-form-body{
+    max-width: 640px;
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  .sub-form-input > li{
+    width: calc(96% / 2);
+  }
+
+  .sub-form-textarea > textarea{
+    min-height: 210px;
+  }
+
+  .sub-form-right{
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sub-form-body{
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+
+  .sub-form-input > li{
+    width: calc(100% - 10px);
+  }
+}
+
+.sub-form-header{
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+}
+
+@media screen and (max-height: 600px){
+  .sub-form-header{
+    padding: 0;
+  }
+  .sub-form-header>h1{
+    margin: 5px 0;
+  }
+
+  .sub-form-input > li{
+    margin: 5px;
+  }
+}
+
+@media screen and (min-height: 601px){
+  .sub-form-header{
+    padding: 20px 0;
+  }
+
+  .sub-form-input > li{
+    margin-bottom: 20px;
+  }
+}
+

@@ -1,0 +1,11 @@
+<div class="page">
+  <section>
+    <div class="page-head">
+      <h1>{{title}}</h1>
+      <label>{{description}}</label>
+    </div>
+    <li *ngFor="let port of portList">
+      <item-port [item]="port"></item-port>
+    </li>
+  </section>
+</div>

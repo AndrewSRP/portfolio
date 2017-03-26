@@ -1,0 +1,17 @@
+<div class="top-header">
+  <div class="top-header-button" (click)="onOpen()">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <div class="top-header-body"
+       [@heroState]="state">
+    <li *ngFor="let menu of menuList;let index=index">
+      <a href="#" (click)="move(menu.link)">
+        <!--href="{{menu.link}}" >-->
+      <span>{{menu.title}}</span></a>
+      <span> / </span>
+    </li>
+    <li>
+      <span>연락처 남기기</span>
+    </li>
+  </div>
+</div>

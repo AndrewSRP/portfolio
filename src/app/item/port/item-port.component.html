@@ -1,0 +1,8 @@
+<div class="item-main"
+     *ngIf="item"
+     [style.backgroundColor]="item.bgColor">
+  <div class="item-port">
+    <img src="{{assetsPath + item.imgPath}}" />
+  </div>
+  <h3>{{item.list}}</h3>
+</div>

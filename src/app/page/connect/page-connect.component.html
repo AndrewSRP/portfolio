@@ -1,0 +1,26 @@
+<div class="page">
+  <section>
+    <h1>{{hide_him}}</h1>
+    <div class="center">
+      <img class="profile-img" src="{{'./assets/' + profile.imgPath}}">
+      <p class="profile-description">
+        <i class="fa fa-quote-left" aria-hidden="true"></i>
+        <br>
+        {{profile.description}}
+        <br>
+        <i class="fa fa-quote-right" aria-hidden="true"></i>
+      </p>
+      <a class="open-contact" (click)="openContact()">{{open_contact}}</a>
+    </div>
+  </section>
+  <div class="bottom">
+    <div class="otherConnect">
+      다른방법으로 연락하고 싶으신가요?
+    </div>
+    <div class="aboutFooter">
+      <li *ngFor="let connect of connectList">
+        <item-connect [item]="connect"></item-connect>
+      </li>
+    </div>
+  </div>
+</div>

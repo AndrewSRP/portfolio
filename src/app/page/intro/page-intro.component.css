@@ -1,0 +1,98 @@
+.page{
+  display: table;
+  background-color: #2A3A3F;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-image: url("./assets/macbook-577758_1920.jpg");
+}
+
+.page-main h1{
+  color: #fff;
+  padding: 0 10px;
+}
+
+.page-main{
+  display: table-cell;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.intro-contact-button{
+  color: #f7f7f7;
+  border: 0px;
+  vertical-align: top;
+}
+.intro-contact-email{
+  color: #555459;
+  border: 1px solid #B2B2B3;
+}
+.intro-contact-email,
+.intro-contact-button{
+  padding: 0.4em;
+
+  margin-bottom: 0;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+
+  font-size: 1.4rem;
+
+  border-radius: 4px;
+}
+
+.go-page-contact{
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  border-bottom: none;
+}
+.open-contact{
+  padding: 1.1rem 2rem;
+  font-size: 1.3rem;
+  border: 2px solid #FDCD3B;
+  border-radius: 2rem;
+
+  color: #f7f7f7;
+}
+
+.open-contact:hover{
+  animation-name: tutsFade;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tutsFade {
+  from {
+    padding: 1.1rem 2.2rem;
+  }
+  to {
+    padding: 1.1rem 2rem;
+    color: #2A3A3F;
+    background-color: #FDCD3B;
+  }
+}
+
+.learn-more{
+  bottom: 0%;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+
+.learn-more,
+.open-contact{
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 2;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+a:hover{
+  cursor: pointer;
+}

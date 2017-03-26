@@ -1,0 +1,106 @@
+.page{
+  background-color: #FDCD3B;
+}
+
+.open-contact{
+  display: inline-block;
+  margin: 20px 0;
+
+  padding: 1.1rem 2rem;
+  font-size: 1.3rem;
+  border: 2px solid #2A3A3F;
+  border-radius: 2rem;
+
+  color: #2A3A3F;
+}
+
+.open-contact:hover{
+  animation-name: tutsFade2;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+a{
+  cursor: pointer;
+}
+
+@keyframes tutsFade2 {
+  from {
+    padding: 1.1rem 2.2rem;
+  }
+  to {
+    padding: 1.1rem 2rem;
+    color: #f7f7f7;
+    background-color: #2A3A3F;
+  }
+}
+
+.profile-description{
+  margin: 0;
+}
+
+i{
+  width: 20px;
+  text-align: center;
+}
+
+.about-body{
+  width: calc(100% - 40px);
+  padding: 20px;
+  display: inline-block;
+}
+
+section{
+  max-width: 450px;
+  margin: auto;
+}
+.center{
+  margin: 30px;
+  border: 4px solid #93a4aa;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding: 20px;
+}
+.profile-img{
+  margin: 20px;
+  border-radius: 50%;
+  /*border: 3px solid #f7f7f7;*/
+}
+
+.profile-description{
+  padding: 10px 20px;
+}
+
+.otherConnect{
+  margin-bottom: 10px;
+
+}
+
+.aboutFooter{
+  display: inline-block;
+}
+
+.aboutFooter > li{
+  list-style-type: none;
+  padding: 0 6px;
+}
+
+@media screen and (min-width: 401px) {
+  .bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+  }
+  .aboutFooter > li{
+    float: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bottom{
+    width: 100%;
+  }
+  .aboutFooter > li{
+    text-align: left;
+  }
+}
